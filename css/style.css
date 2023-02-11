@@ -82,6 +82,13 @@ h1:hover {
   gap: 0.5rem;
   color: hsl(215, 51%, 70%);
 }
+.days-left span {
+  font-size: 0.9rem;
+}
+.days-left img {
+  width: 0.9rem;
+  height: auto;
+}
 hr {
   margin-left: 1rem;
   /* backcolor: red; */
