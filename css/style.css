@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container-content {
+  width: 20rem;
+  height: 32rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 5%;
+}
+/* ***** NFT DESCRIPTION***** */
+.nft-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-cube img {
+  /* overflow: hidden; */
+  object-fit: cover;
+  width: 17rem;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5%;
+  transition: all;
+}
+.img-cube img:hover {
+  background-color: aqua;
+}
+
+.basic-info {
+  margin-left: 1.5rem;
+  font-size: 18px;
+}
+.title h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+h1:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.desc-nft h4 {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.price-days {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.price {
+  display: flex;
+  gap: 0.5rem;
+  color: hsl(178, 100%, 50%);
+}
+.price span {
+  font-size: 0.9rem;
+}
+.price img {
+  width: 0.7rem;
+  height: auto;
+}
+.days-left {
+  display: flex;
+  gap: 0.5rem;
+  color: hsl(215, 51%, 70%);
+}
+hr {
+  margin-left: 1rem;
+  /* backcolor: red; */
+  border: 0.01rem solid hsl(215, 32%, 27%);
+  width: 85%;
+}
+
+/* *******AVATAR/OWNER******* */
+.avatar {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-; */
+  margin-left: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+.avatar-imag img {
+  margin-right: 1.1rem;
+  width: 2.5rem;
+  height: auto;
+  border: 0.1rem solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+.avatar-desc {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 1rem;
+  /* padding-top: 0.5rem; */
+}
+.avatar-desc span {
+  color: hsl(0, 0%, 100%);
+}
+.avatar-desc span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
