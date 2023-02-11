@@ -69,6 +69,7 @@ h1:hover {
   display: flex;
   gap: 0.5rem;
   color: hsl(178, 100%, 50%);
+  margin-left: -0.5rem
 }
 .price span {
   font-size: 0.9rem;
