@@ -25,18 +25,36 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.img-cube {
+  position: relative;
+}
 .img-cube img {
-  /* overflow: hidden; */
-  object-fit: cover;
   width: 17rem;
   height: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 5%;
-  transition: all;
+  display: block;
 }
-.img-cube img:hover {
-  background-color: aqua;
+.overlay {
+  position: absolute;
+  width: 17rem;
+  height: 17rem;
+  top: 18.5%;
+  border-radius: 5%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
+.overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img:hover .overlay {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .basic-info {
